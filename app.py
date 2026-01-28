@@ -4,7 +4,7 @@ import joblib
 st.markdown("""
 <style>
 .stApp {
-    background-image: url("https://imgs.search.brave.com/dXRrc7SLrzDVBWMTeCG6sFh5tIp3S1gT82EVMLlHzro/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvNTIy/ODMzMzY0L3Bob3Rv/L2JlbmdhbHVydS1p/bmRpYS1vdXRzaWRl/LXZpZXctb2YtZmxp/cGthcnQtb2ZmaWNl/LXNob3Qtb24tb2N0/b2Jlci0wMS0yMDE1/LWluLWJlbmdhbHVy/dS1pbmRpYS5qcGc_/cz02MTJ4NjEyJnc9/MCZrPTIwJmM9V3Zm/T1ZzMWxOY21JZ0l3/dWdWTlZvT3ZFQ0lP/U1RuWExBTnlsNFZU/ZkdCaz0");
+    background-image: url("https://imgs.search.brave.com/cBJcdpfVQKwFTIYxc2ezxzQd0lrwx52Wv1rU0DuynBw/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93d3cu/ZnJlZXBuZ2xvZ29z/LmNvbS91cGxvYWRz/L2ZsaXBrYXJ0LWxv/Z28tcG5nL2ZsaXBr/YXJ0LWZyZXNoZXJz/LW5hdGlvbi1mcmVz/aGVycy1qb2JzLXRl/c3RpbmctMTEucG5n");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -60,6 +60,7 @@ if st.button("Predict Price"):
     prediction = model.predict(input_data)[0]
 
     st.success(f"💰 Estimated Laptop Price: ₹ {int(prediction):,}")
+
 
 
 
