@@ -4,7 +4,7 @@ import joblib
 st.markdown("""
 <style>
 .stApp {
-    background-image: url("https://imgs.search.brave.com/6qOydwnpzrFodqQ-mBLvafwMus-aNs7Us2TjwqleLC0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTIz/NDE2MDY2Mi9waG90/by9mbGlwa2FydC1s/b2dvLWRpc3BsYXll/ZC1vbi1hLXBob25l/LXNjcmVlbi1hbmQt/ZmxpcGthcnQtd2Vi/c2l0ZS1kaXNwbGF5/ZWQtb24tYS1sYXB0/b3Atc2NyZWVuLmpw/Zz9zPTYxMng2MTIm/dz0wJms9MjAmYz1K/TnVNaGJDWi1aQXpO/VFdzY3FnOXoxNTBD/S1RveUNPdEhUQ19R/Q19nN1I4PQ");
+    background-image: url("https://imgs.search.brave.com/dXRrc7SLrzDVBWMTeCG6sFh5tIp3S1gT82EVMLlHzro/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvNTIy/ODMzMzY0L3Bob3Rv/L2JlbmdhbHVydS1p/bmRpYS1vdXRzaWRl/LXZpZXctb2YtZmxp/cGthcnQtb2ZmaWNl/LXNob3Qtb24tb2N0/b2Jlci0wMS0yMDE1/LWluLWJlbmdhbHVy/dS1pbmRpYS5qcGc_/cz02MTJ4NjEyJnc9/MCZrPTIwJmM9V3Zm/T1ZzMWxOY21JZ0l3/dWdWTlZvT3ZFQ0lP/U1RuWExBTnlsNFZU/ZkdCaz0");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -60,5 +60,6 @@ if st.button("Predict Price"):
     prediction = model.predict(input_data)[0]
 
     st.success(f"💰 Estimated Laptop Price: ₹ {int(prediction):,}")
+
 
 
