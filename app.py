@@ -1,6 +1,16 @@
 import streamlit as st
 import pandas as pd
 import joblib
+st.markdown("""
+<style>
+.stApp {
+    background-image: url("https://imgs.search.brave.com/fn4ab4wk258FkWE5YkBPaM90g3DvcxMsUzX8feLcoGM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/cHJpbWVib29rLmlu/L3VwbG9hZHMvaW1h/Z2VzLzE3NTc2NzQ3/MTlfMWNmMWE1MDQ3/YWMyZjhiYTRjODIu/cG5n");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+</style>
+""", unsafe_allow_html=True)
 
 # Load trained model
 model = joblib.load("model.pkl")
@@ -50,3 +60,4 @@ if st.button("Predict Price"):
     prediction = model.predict(input_data)[0]
 
     st.success(f"💰 Estimated Laptop Price: ₹ {int(prediction):,}")
+
