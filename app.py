@@ -4,7 +4,7 @@ import joblib
 st.markdown("""
 <style>
 .stApp {
-    background-image: url("https://imgs.search.brave.com/cBJcdpfVQKwFTIYxc2ezxzQd0lrwx52Wv1rU0DuynBw/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93d3cu/ZnJlZXBuZ2xvZ29z/LmNvbS91cGxvYWRz/L2ZsaXBrYXJ0LWxv/Z28tcG5nL2ZsaXBr/YXJ0LWZyZXNoZXJz/LW5hdGlvbi1mcmVz/aGVycy1qb2JzLXRl/c3RpbmctMTEucG5n");
+    background-image: url("https://imgs.search.brave.com/cSdWvKY9Gquq9tcRoZH8os2AMjd0qYcX0YxBpMCRDRY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/aWNvbnNjb3V0LmNv/bS9pY29uL2ZyZWUv/cG5nLTI1Ni9mcmVl/LWZsaXBrYXJ0LWlj/b24tc3ZnLWRvd25s/b2FkLXBuZy0yMjY1/OTQucG5nP2Y9d2Vi/cCZ3PTI1Ng");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -60,6 +60,7 @@ if st.button("Predict Price"):
     prediction = model.predict(input_data)[0]
 
     st.success(f"💰 Estimated Laptop Price: ₹ {int(prediction):,}")
+
 
 
 
